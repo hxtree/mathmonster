@@ -34,3 +34,11 @@ What numbers equal total?D E
 You Win!!!!
 ```
 # mathmonster
+
+
+Run Bin using local volume
+```
+git clone https://github.com/Ouxsoft/LuckByDice.git
+docker build --target test --tag mathmonster:latest -f Dockerfile .
+docker run -it --mount type=bind,source="$(pwd)"/,target=/application/ mathmonster:latest php src/MathMonster.php
+```
