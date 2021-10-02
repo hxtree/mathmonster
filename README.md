@@ -38,7 +38,7 @@ You Win!!!!
 
 Run Bin using local volume
 ```
-git clone https://github.com/Ouxsoft/LuckByDice.git
+git clone https://github.com/hxtree/mathmonster.git
 docker build --target test --tag mathmonster:latest -f Dockerfile .
 docker run -it --mount type=bind,source="$(pwd)"/,target=/application/ mathmonster:latest php src/MathMonster.php
 ```
