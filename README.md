@@ -33,10 +33,7 @@ E) 30
 What numbers equal total?D E
 You Win!!!!
 ```
-# mathmonster
-
-
-Run Bin using local volume
+## Basic Usage
 ```
 git clone https://github.com/hxtree/mathmonster.git
 docker build --target test --tag mathmonster:latest -f Dockerfile .
