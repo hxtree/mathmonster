@@ -37,5 +37,4 @@ You Win!!!!
 ```
 git clone https://github.com/hxtree/mathmonster.git
 docker build --target test --tag mathmonster:latest -f Dockerfile .
-docker run -it --mount type=bind,source="$(pwd)"/,target=/application/ mathmonster:latest php src/MathMonster.php
-```
+docker run -it --mount type=bind,source="$(pwd)"/,target=/application/ mathmonster:latest php public/index.php
